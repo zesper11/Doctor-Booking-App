@@ -16,7 +16,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        import Home from "./pages/home";
         <Route path="/doctors/" element={<Doctors />} />
         <Route path="/doctors/:specialty" element={<Doctors />} />
         <Route path="/contact" element={<Contact />} />

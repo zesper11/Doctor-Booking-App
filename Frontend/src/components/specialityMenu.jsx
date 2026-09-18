@@ -1,5 +1,6 @@
 import React from "react";
 import { specialityData } from "../assets/assets.js";
+import { Link } from "react-router-dom";
 
 const SpecialityMenu = () => {
   return (
@@ -12,18 +13,20 @@ const SpecialityMenu = () => {
         your appointment hassle-free.
       </p>
       <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-8 md:gap-x-5">
-        {specialityData.map((spe) => (
-          <div
-            key={spe.speciality}
+        {specialityData.map((item, i) => (
+          <Link
+            to={`/doctors/${item.speciality}`}
+            key={i}
             className="flex cursor-pointer flex-col items-center gap-3 text-center transition-transform duration-200 hover:-translate-y-1"
+            onClick={() => scrollTo(0, 0)}
           >
             <img
-              src={spe.image}
-              alt={`${spe.speciality} speciality`}
+              src={item.image}
+              alt={`${item.speciality} speciality`}
               className="h-24 w-24 object-contain"
             />
-            <p className="text-xs text-gray-900">{spe.speciality}</p>
-          </div>
+            <p className="text-xs text-gray-900">{item.speciality}</p>
+          </Link>
         ))}
       </div>
     </section>
