@@ -8,6 +8,7 @@ import MyAppointments from "./pages/myAppointments";
 import Profile from "./pages/profile";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/appointment/:docId" element={<Appointment />} />
         <Route path="profile" element={<Profile />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
