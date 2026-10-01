@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { doctors, specialityData } from "../assets/assets";
-import "../app.css";
+import "../App.css";
 import "../index.css";
 
 const Doctors = () => {
