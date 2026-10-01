@@ -5,6 +5,7 @@ import Contact from "./pages/contact";
 import Login from "./pages/login";
 import Appointment from "./pages/appointment";
 import MyAppointments from "./pages/myAppointments";
+import BookingConfirmation from "./pages/bookingConfirmation";
 import Profile from "./pages/profile";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
@@ -21,9 +22,11 @@ const App = () => {
         <Route path="/doctors/:specialty" element={<Doctors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Login />} />
         <Route path="/my-appointments" element={<MyAppointments />} />
+        <Route path="/booking-confirmation" element={<BookingConfirmation />} />
         <Route path="/appointment/:docId" element={<Appointment />} />
-        <Route path="profile" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </div>

@@ -11,7 +11,7 @@ const Banner = () => {
           With 100+ Trusted Doctors
         </h1>
         <Link
-          to="/login"
+          to="/signup"
           className="mt-7 rounded-full bg-white px-8 py-3 text-sm text-gray-700 transition-colors hover:bg-gray-100"
         >
           Create account

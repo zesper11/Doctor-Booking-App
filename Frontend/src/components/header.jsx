@@ -1,4 +1,5 @@
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -23,10 +24,14 @@ const Header = () => {
           </p>
         </div>
 
-        <button className="flex cursor-pointer items-center gap-3 rounded-full bg-white px-8 py-3 text-sm font-light text-gray-600">
+        <Link
+          to="/doctors"
+          className="flex items-center gap-3 rounded-full bg-white px-8 py-3 text-sm font-light text-gray-600 no-underline"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <span>Book appointment</span>
           <img src={assets.arrow_icon} alt="" className="w-3" />
-        </button>
+        </Link>
       </div>
 
       <div className="relative flex flex-1 items-end justify-center pt-8 md:justify-end md:pt-0">

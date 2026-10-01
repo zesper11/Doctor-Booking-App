@@ -1,0 +1,6 @@
+.git
+.vscode
+**/node_modules
+Backend/.env
+Backend/data
+Frontend/dist

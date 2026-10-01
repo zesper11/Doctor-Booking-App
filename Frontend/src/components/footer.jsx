@@ -31,14 +31,16 @@ const Footer = () => {
             Get in touch
           </h2>
           <div className="mt-5 flex flex-col gap-3 text-[13px]">
-            <a href="tel:+0000000000">+0-000-000-000</a>
-            <a href="mailto:hello@prescripto.dev">hello@prescripto.dev</a>
+            <a href="mailto:rohanniroula.work@gmail.com">
+              rohanniroula.work@gmail.com
+            </a>
             <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
           </div>
         </div>
       </div>
       <p className="py-5 text-center text-xs text-gray-700">
-        Copyright 2024 © Rohan niroula. All rights reserved.
+        Copyright {new Date().getFullYear()} © Rohan niroula. All rights
+        reserved.
       </p>
     </footer>
   );
