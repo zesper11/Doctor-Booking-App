@@ -48,7 +48,7 @@ Add these environment variables in Vercel Project Settings for Production (and P
 | `STRIPE_WEBHOOK_SECRET` | Webhook signing secret for the deployed `/api/webhooks/stripe` endpoint |
 | `CLIENT_URL` | The deployed site origin, for example `https://your-project.vercel.app` |
 
-The frontend calls the same-origin `/api` routes, so no `VITE_API_BASE_URL` is required. Configure the Stripe webhook URL in Stripe and restrict MongoDB Atlas network access according to your deployment policy.
+Production frontend requests use `https://prescripto-6if7.onrender.com` for `/api` routes by default. To use a different backend, set `VITE_API_BASE_URL` in Vercel before building. Local development continues to use the Vite proxy at `http://localhost:4242`. Set `CLIENT_URL` on the Render backend to your deployed frontend origin so credentialed API requests pass CORS, and configure the Stripe webhook URL in Stripe. Restrict MongoDB Atlas network access according to your deployment policy.
 
 After adding the variables, deploy from the Vercel dashboard or run `vercel` from the repository root with the Vercel CLI installed and authenticated.
 
